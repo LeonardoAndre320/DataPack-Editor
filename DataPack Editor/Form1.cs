@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DataPack_Editor
 {
-    public partial class Form1 : Form
+    public partial class Carregar : Form
     {
-        public Form1()
+        public Carregar()
         {
             InitializeComponent();
         }
