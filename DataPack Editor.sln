@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPack Editor", "DataPack Editor\DataPack Editor.csproj", "{BA0CCB7F-1B54-40C9-8F5F-CD8DC3AB0999}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPack Creator", "DataPack Editor\DataPack Creator.csproj", "{BA0CCB7F-1B54-40C9-8F5F-CD8DC3AB0999}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F7E533A-7C2D-4A16-89B1-07CB7AAA1226}
 	EndGlobalSection
 EndGlobal
