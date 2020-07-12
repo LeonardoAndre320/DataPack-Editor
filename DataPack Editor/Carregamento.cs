@@ -43,15 +43,15 @@ namespace DataPack_Editor
         #region Controle da Janela
         private void bntFechar_Click(object sender, EventArgs e) => Application.Exit();
         private void bntFechar_MouseEnter(object sender, EventArgs e)
-        {bntFechar.ForeColor = Color.Red;}
+        { bntFechar.Image = BotoesJanela.Images[3]; }
         private void bntFechar_MouseLeave(object sender, EventArgs e)
-        {bntFechar.ForeColor = Color.FromArgb(224, 224, 224);}
+        { if(bntFechar.Image == null) bntFechar.Image = BotoesJanela.Images[2]; }
 
         private void bntMinimizar_Click(object sender, EventArgs e) => this.WindowState = FormWindowState.Minimized;
         private void bntMinimizar_MouseEnter(object sender, EventArgs e)
-        {bntMinimizar.ForeColor = Color.DeepSkyBlue;}
+        { bntMinimizar.Image = BotoesJanela.Images[5]; }
         private void bntMinimizar_MouseLeave(object sender, EventArgs e)
-        {bntMinimizar.ForeColor = Color.FromArgb(224, 224, 224);}
+        { bntMinimizar.Image = BotoesJanela.Images[4]; }
         #endregion
         #region controle botoes
         private void bntNovo_MouseEnter(object sender, EventArgs e)
