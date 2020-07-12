@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.PainelProjeto = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.editorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,13 +47,13 @@
             this.efeitoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comandoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.bntFechar = new System.Windows.Forms.PictureBox();
+            this.bntMaximizar = new System.Windows.Forms.PictureBox();
+            this.bntMinimizar = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // PainelProjeto
@@ -96,7 +97,7 @@
             this.novoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.novoToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // abrirToolStripMenuItem
@@ -104,7 +105,7 @@
             this.abrirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.abrirToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // salvarToolStripMenuItem
@@ -112,7 +113,7 @@
             this.salvarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.salvarToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.salvarToolStripMenuItem.Text = "Salvar";
             // 
             // exportarToolStripMenuItem
@@ -120,7 +121,7 @@
             this.exportarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.exportarToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.exportarToolStripMenuItem.Name = "exportarToolStripMenuItem";
-            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exportarToolStripMenuItem.Text = "Exportar";
             // 
             // sairToolStripMenuItem
@@ -128,7 +129,7 @@
             this.sairToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // projetoToolStripMenuItem
@@ -147,7 +148,7 @@
             this.montarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.montarToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.montarToolStripMenuItem.Name = "montarToolStripMenuItem";
-            this.montarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.montarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.montarToolStripMenuItem.Text = "Montar";
             // 
             // editarProjetoToolStripMenuItem
@@ -155,7 +156,7 @@
             this.editarProjetoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.editarProjetoToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.editarProjetoToolStripMenuItem.Name = "editarProjetoToolStripMenuItem";
-            this.editarProjetoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarProjetoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editarProjetoToolStripMenuItem.Text = "Editar Projeto";
             // 
             // abrirPastaToolStripMenuItem
@@ -163,7 +164,7 @@
             this.abrirPastaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.abrirPastaToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.abrirPastaToolStripMenuItem.Name = "abrirPastaToolStripMenuItem";
-            this.abrirPastaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirPastaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abrirPastaToolStripMenuItem.Text = "Abrir Pasta";
             // 
             // adicionarToolStripMenuItem
@@ -183,7 +184,7 @@
             this.itemToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.itemToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.itemToolStripMenuItem.Name = "itemToolStripMenuItem";
-            this.itemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.itemToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.itemToolStripMenuItem.Text = "Item";
             // 
             // craftToolStripMenuItem
@@ -191,7 +192,7 @@
             this.craftToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.craftToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.craftToolStripMenuItem.Name = "craftToolStripMenuItem";
-            this.craftToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.craftToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.craftToolStripMenuItem.Text = "Craft";
             // 
             // efeitoToolStripMenuItem
@@ -199,7 +200,7 @@
             this.efeitoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.efeitoToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.efeitoToolStripMenuItem.Name = "efeitoToolStripMenuItem";
-            this.efeitoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.efeitoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.efeitoToolStripMenuItem.Text = "Efeito";
             // 
             // comandoToolStripMenuItem
@@ -207,7 +208,7 @@
             this.comandoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.comandoToolStripMenuItem.ForeColor = System.Drawing.Color.Silver;
             this.comandoToolStripMenuItem.Name = "comandoToolStripMenuItem";
-            this.comandoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.comandoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.comandoToolStripMenuItem.Text = "Comando";
             // 
             // opçõesToolStripMenuItem
@@ -217,54 +218,61 @@
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.opçõesToolStripMenuItem.Text = "Opções";
             // 
-            // pictureBox1
+            // bntFechar
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(534, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.bntFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bntFechar.Image = ((System.Drawing.Image)(resources.GetObject("bntFechar.Image")));
+            this.bntFechar.Location = new System.Drawing.Point(534, 0);
+            this.bntFechar.Name = "bntFechar";
+            this.bntFechar.Size = new System.Drawing.Size(24, 24);
+            this.bntFechar.TabIndex = 2;
+            this.bntFechar.TabStop = false;
+            this.bntFechar.Click += new System.EventHandler(this.bntFechar_Click);
             // 
-            // pictureBox2
+            // bntMaximizar
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Location = new System.Drawing.Point(504, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.bntMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bntMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("bntMaximizar.Image")));
+            this.bntMaximizar.Location = new System.Drawing.Point(512, 0);
+            this.bntMaximizar.Name = "bntMaximizar";
+            this.bntMaximizar.Size = new System.Drawing.Size(24, 24);
+            this.bntMaximizar.TabIndex = 2;
+            this.bntMaximizar.TabStop = false;
+            this.bntMaximizar.Click += new System.EventHandler(this.bntMaximizar_Click);
             // 
-            // pictureBox3
+            // bntMinimizar
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Location = new System.Drawing.Point(474, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.bntMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bntMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("bntMinimizar.Image")));
+            this.bntMinimizar.Location = new System.Drawing.Point(488, 0);
+            this.bntMinimizar.Name = "bntMinimizar";
+            this.bntMinimizar.Size = new System.Drawing.Size(24, 24);
+            this.bntMinimizar.TabIndex = 2;
+            this.bntMinimizar.TabStop = false;
+            this.bntMinimizar.Click += new System.EventHandler(this.bntMinimizar_Click);
             // 
             // Editor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(558, 315);
             this.ControlBox = false;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.bntMinimizar);
+            this.Controls.Add(this.bntMaximizar);
+            this.Controls.Add(this.bntFechar);
             this.Controls.Add(this.PainelProjeto);
             this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Editor";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,8 +298,8 @@
         private System.Windows.Forms.ToolStripMenuItem efeitoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem comandoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox bntFechar;
+        private System.Windows.Forms.PictureBox bntMaximizar;
+        private System.Windows.Forms.PictureBox bntMinimizar;
     }
 }

@@ -120,4 +120,29 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bntFechar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAKZJREFUSEu1jVEKxCAQxXr/S7tVVsloVCxtIB/mDXillD5V45vyUWF7YqW8bciw
+        n0hK2x4cSFrnQZXYbpKwhQcktlMy7EOAxPYssX35QZacbE2NnWTVVI3iDLsNapzYYzeDGif22M2gRnGG
+        3QY1dpJVUzVCcrI1Nf4ltmeJ7dMPiO2UDPsQbontJglbeNySfttJWt8eHEpKs5HtiZXy7sfX1fie6foB
+        OK4pOow/5RwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bntMaximizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAFdJREFUSEvtzTEKwDAMQ1Hf/9Iugj+0IGcoSbvogYfYRKruPjp2uXPuj6UyOE1+
+        KuDva8RICjxiJAUeMZICjxhJgUeMpMAjRnzBhP8PnCbfFxwZu9w3XRePUPwutakm6wAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="bntMinimizar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAD9JREFUSEvt0DEKADAIQ9Hc/9IpFisO3Zo65UHWLwgzG0By75tzIKdSzR6PqVSz
+        x2Mq1ezxfNq7a1N5wMxGAQu4uCfnbleoEQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
