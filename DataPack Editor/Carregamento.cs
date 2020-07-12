@@ -73,6 +73,11 @@ namespace DataPack_Editor
         {bntAbrirProjeto.BackColor = Color.FromArgb(100, 100, 100);}
         #endregion
 
-
+        private void Iniciar(object sender,EventArgs e)
+        {
+            Editor E = new Editor();
+            E.Show();
+            this.Dispose(false);
+        }
     }
 }

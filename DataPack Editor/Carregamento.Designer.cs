@@ -102,6 +102,7 @@
             this.bntNovo.Name = "bntNovo";
             this.bntNovo.Size = new System.Drawing.Size(149, 38);
             this.bntNovo.TabIndex = 1;
+            this.bntNovo.Click += new System.EventHandler(this.Iniciar);
             this.bntNovo.MouseEnter += new System.EventHandler(this.bntNovo_MouseEnter);
             this.bntNovo.MouseLeave += new System.EventHandler(this.bntNovo_MouseLeave);
             // 
@@ -117,6 +118,7 @@
             this.lblNovo.TabIndex = 0;
             this.lblNovo.Text = "Novo";
             this.lblNovo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNovo.Click += new System.EventHandler(this.Iniciar);
             this.lblNovo.MouseEnter += new System.EventHandler(this.lblNovo_MouseEnter);
             this.lblNovo.MouseLeave += new System.EventHandler(this.lblNovo_MouseLeave);
             // 
