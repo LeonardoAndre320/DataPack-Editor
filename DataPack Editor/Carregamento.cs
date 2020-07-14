@@ -41,11 +41,11 @@ namespace DataPack_Editor
         }
         #endregion
         #region Controle da Janela
-        private void bntFechar_Click(object sender, EventArgs e) => Application.Exit();
+        private void bntFechar_Click(object sender, EventArgs e) => Environment.Exit(0);
         private void bntFechar_MouseEnter(object sender, EventArgs e)
         { bntFechar.Image = BotoesJanela.Images[3]; }
         private void bntFechar_MouseLeave(object sender, EventArgs e)
-        { if(bntFechar.Image == null) bntFechar.Image = BotoesJanela.Images[2]; }
+        {  bntFechar.Image = BotoesJanela.Images[2]; }
 
         private void bntMinimizar_Click(object sender, EventArgs e) => this.WindowState = FormWindowState.Minimized;
         private void bntMinimizar_MouseEnter(object sender, EventArgs e)

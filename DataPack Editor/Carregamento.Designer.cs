@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carregar));
             this.PainelArasto = new System.Windows.Forms.Panel();
+            this.bntMinimizar = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.bntNovo = new System.Windows.Forms.Panel();
             this.lblNovo = new System.Windows.Forms.Label();
@@ -40,12 +41,11 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.BotoesJanela = new System.Windows.Forms.ImageList(this.components);
             this.bntFechar = new System.Windows.Forms.PictureBox();
-            this.bntMinimizar = new System.Windows.Forms.PictureBox();
             this.PainelArasto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).BeginInit();
             this.bntNovo.SuspendLayout();
             this.bntAbrirProjeto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bntFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // PainelArasto
@@ -58,6 +58,18 @@
             this.PainelArasto.Name = "PainelArasto";
             this.PainelArasto.Size = new System.Drawing.Size(568, 24);
             this.PainelArasto.TabIndex = 0;
+            // 
+            // bntMinimizar
+            // 
+            this.bntMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("bntMinimizar.Image")));
+            this.bntMinimizar.Location = new System.Drawing.Point(520, 0);
+            this.bntMinimizar.Name = "bntMinimizar";
+            this.bntMinimizar.Size = new System.Drawing.Size(24, 24);
+            this.bntMinimizar.TabIndex = 4;
+            this.bntMinimizar.TabStop = false;
+            this.bntMinimizar.Click += new System.EventHandler(this.bntMinimizar_Click);
+            this.bntMinimizar.MouseEnter += new System.EventHandler(this.bntMinimizar_MouseEnter);
+            this.bntMinimizar.MouseLeave += new System.EventHandler(this.bntMinimizar_MouseLeave);
             // 
             // lblTitulo
             // 
@@ -153,6 +165,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(374, 160);
             this.listBox1.TabIndex = 3;
+            this.listBox1.TabStop = false;
             // 
             // BotoesJanela
             // 
@@ -180,18 +193,6 @@
             this.bntFechar.MouseEnter += new System.EventHandler(this.bntFechar_MouseEnter);
             this.bntFechar.MouseLeave += new System.EventHandler(this.bntFechar_MouseLeave);
             // 
-            // bntMinimizar
-            // 
-            this.bntMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("bntMinimizar.Image")));
-            this.bntMinimizar.Location = new System.Drawing.Point(520, 0);
-            this.bntMinimizar.Name = "bntMinimizar";
-            this.bntMinimizar.Size = new System.Drawing.Size(24, 24);
-            this.bntMinimizar.TabIndex = 4;
-            this.bntMinimizar.TabStop = false;
-            this.bntMinimizar.Click += new System.EventHandler(this.bntMinimizar_Click);
-            this.bntMinimizar.MouseEnter += new System.EventHandler(this.bntMinimizar_MouseEnter);
-            this.bntMinimizar.MouseLeave += new System.EventHandler(this.bntMinimizar_MouseLeave);
-            // 
             // Carregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,12 +215,12 @@
             this.Text = "DataPack Creator";
             this.PainelArasto.ResumeLayout(false);
             this.PainelArasto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).EndInit();
             this.bntNovo.ResumeLayout(false);
             this.bntNovo.PerformLayout();
             this.bntAbrirProjeto.ResumeLayout(false);
             this.bntAbrirProjeto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bntFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bntMinimizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

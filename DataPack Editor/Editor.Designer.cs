@@ -75,6 +75,7 @@
             this.opçõesToolStripMenuItem});
             this.Opçoes.Location = new System.Drawing.Point(0, 0);
             this.Opçoes.Name = "Opçoes";
+            this.Opçoes.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.Opçoes.Size = new System.Drawing.Size(558, 24);
             this.Opçoes.TabIndex = 1;
             this.Opçoes.Text = "menuStrip1";

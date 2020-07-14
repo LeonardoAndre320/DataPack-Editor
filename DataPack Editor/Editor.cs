@@ -22,8 +22,8 @@ namespace DataPack_Editor
             //Coloca em tela cheia
             Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
 
-            Opçoes.MouseDown += new MouseEventHandler(MouseBaixo);
             Opçoes.MouseMove += new MouseEventHandler(MovimentoMouse);
+            Opçoes.MouseDown += new MouseEventHandler(MouseBaixo);
         }
 
         #region Movimentacao da janela
