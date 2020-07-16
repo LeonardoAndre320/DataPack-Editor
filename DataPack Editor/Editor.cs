@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO.Compression;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
@@ -63,7 +64,57 @@ namespace DataPack_Editor
         }
         private void bntFechar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Environment.Exit(0);
+        }
+
+        private void MenuSelecionado(object sender, EventArgs e)
+        {
+            ToolStripMenuItem Menu = default(ToolStripMenuItem);
+            Menu = (ToolStripMenuItem)sender;
+            Menu.ForeColor = Color.Black;
+        }
+        private void MenuDesSelecionado(object sender, EventArgs e)
+        {
+            ToolStripMenuItem Menu = default(ToolStripMenuItem);
+            Menu = (ToolStripMenuItem)sender;
+            Menu.ForeColor = Color.Silver;
+        }
+
+        private void BotõesJanelaEntrar(object sender, EventArgs e)
+        {
+            PictureBox Botao = default(PictureBox);
+            Botao = (PictureBox)sender;
+
+            switch(Botao.Name)
+            {
+                case "bntFechar":bntFechar.Image = BotoesJanela.Images[3];
+                    break;
+                case "bntMinimizar":bntMinimizar.Image = BotoesJanela.Images[5];
+                    break;
+                case "bntMaximizar":
+                    if(Maximizado)
+                    {bntMaximizar.Image = BotoesJanela.Images[7];
+                    }else{bntMaximizar.Image = BotoesJanela.Images[1];}
+                    break;
+            }
+        }
+        private void BotõesJanelaSair(object sender,EventArgs e)
+        {
+            PictureBox Botao = default(PictureBox);
+            Botao = (PictureBox)sender;
+
+            switch(Botao.Name)
+            {
+                case "bntFechar":bntFechar.Image = BotoesJanela.Images[2];
+                    break;
+                case "bntMinimizar":bntMinimizar.Image = BotoesJanela.Images[4];
+                    break;
+                case "bntMaximizar":
+                    if(Maximizado)
+                    { bntMaximizar.Image = BotoesJanela.Images[6]; 
+                    }else{ bntMaximizar.Image = BotoesJanela.Images[0];}
+                    break;
+            }
         }
         #endregion
     }
